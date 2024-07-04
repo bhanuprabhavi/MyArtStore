@@ -1,0 +1,116 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 200px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+			/*#nav{
+				display: inline-block;
+			}*/
+		</style>
+        <body>
+			<div class="container mt-3">
+				<ul class="nav" >
+
+                   <li class="nav-item"><a href="" class="nav-link"><i class="bi bi-list" style="font-size: 2rem;"></a></i></li>
+
+                   <li class="nav-item"><a href="/home" class="nav-link"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></a></i></li>
+
+                   <li class="nav-item"><a href="" class="nav-link"><h5 class="display-5" style="color: midnightblue;font-weight:500;">My Art Store</h5></li>
+
+                   <li class="nav-item ms-auto"><a href="/signup" class="nav-link"><i class="bi bi-person-circle" style="font-size: 2rem;"></a></i></li>
+
+                   <li class="nav-item"><a href="/cart" class="nav-link"><i class="bi bi-cart-fill" style="font-size: 2rem;"></a></i></li>
+
+			  </ul>
+            </div><br>
+				
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="img1.jpg"/>
+						<b><br>Shyam Singha roy</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1360/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Introduction to Java">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="img2.jpg" >
+						<b><br>Budha</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1100/-"><del><small>1350/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Python Programming">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img3.jpg" >
+						<b><br>Boat in a lake</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="THE TRUTH ABOUT HTML5">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img4.jpg">
+						<b><br>Jhumka</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Artificial Intelligence">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img5.jpg" >
+						<b><br>Bride</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The C++ Programming language">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img6.jpg" >
+						<b><br>Music</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="SQL for MySQL Developers">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img7.jpg" >
+						<b><br>Little things</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Database Management System">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img8.jpg">
+						<b><br>girl painting a rainbow</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Internet of Things">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img9.jpg">
+						<b><br>Read the world</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="999/-"><del><small>1200/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Eloquent JavaScript">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                    <div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img10.jpg" >
+						<b><br>peaceful life</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1250/-"><del><small>1399/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Full Stack Developer">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img11.jpg">
+						<b><br>Beautiful Butterfly</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="987/-"><del><small>1111/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Node Cookbook">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img12.jpg">
+						<b><br>childhood</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1150/-"><del><small>1250/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Data Structures">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img13.jpg" >
+						<b><br>Durga Maa</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="649/-"><del><small>800/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The C++ Programming language">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img14.jpg" >
+						<b><br>Sky view</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-"><del><small>850/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="SQL for MySQL Developers">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img15.jpg" >
+						<b><br>scooty ride</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="800/-"><del><small>870/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Database Management System">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="img16.jpg">
+						<b><br>Sparle in your own way</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>990/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Internet of Things">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
